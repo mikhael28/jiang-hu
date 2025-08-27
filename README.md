@@ -1,17 +1,17 @@
-# 🌍 Mr. Worldwide
+# 🌍 Jiang Hu
 
-The internet's most beautiful npm package for comprehensive country data including ISO codes, names, continents, and mercator coordinates.
+The internet's most helpful npm package for comprehensive country data, including utility functions to help work with ISO codes, names, continents, and mercator coordinates.
 
 ## Installation
 
 ```bash
-npm install mr-worldwide
+npm install jiang-hu
 ```
 
 ## Quick Start
 
 ```typescript
-import { helloWorld, getCountryNameFromCode, convertTwoToThree } from 'mr-worldwide';
+import { helloWorld, getCountryNameFromCode, convertTwoToThree } from 'jiang-hu';
 
 // Hello World function
 console.log(helloWorld()); // "Mr World Wide is here"
@@ -104,7 +104,7 @@ import {
   countrySizeScales,
   twoToThree,
   threeToTwo
-} from 'mr-worldwide';
+} from 'jiang-hu';
 ```
 
 #### `code_to_country`
@@ -169,7 +169,7 @@ import type {
   CountryName,
   ThreeDigitCode,
   TwoDigitCode
-} from 'mr-worldwide';
+} from 'jiang-hu';
 
 // Country interface
 interface Country {
@@ -196,7 +196,7 @@ type CountryName = keyof typeof country_to_code;
 ### Building a Country Selector
 
 ```typescript
-import { list_of_countries, getCountryCodeFromName } from 'mr-worldwide';
+import { list_of_countries, getCountryCodeFromName } from 'jiang-hu';
 
 // Create dropdown options
 const countryOptions = list_of_countries.map(country => ({
@@ -217,7 +217,7 @@ const continentGroups = countryOptions.reduce((groups, country) => {
 ### Map Visualization
 
 ```typescript
-import { mercator_hash, countrySizeScales } from 'mr-worldwide';
+import { mercator_hash, countrySizeScales } from 'jiang-hu';
 
 // Plot countries on a map
 Object.entries(mercator_hash).forEach(([code, [lng, lat]]) => {
@@ -229,7 +229,7 @@ Object.entries(mercator_hash).forEach(([code, [lng, lat]]) => {
 ### Data Validation
 
 ```typescript
-import { convertTwoToThree, getCountryNameFromCode } from 'mr-worldwide';
+import { convertTwoToThree, getCountryNameFromCode } from 'jiang-hu';
 
 function validateCountryCode(code: string): boolean {
   return getCountryNameFromCode(code) !== undefined;

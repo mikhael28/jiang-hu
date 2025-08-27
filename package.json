@@ -1,14 +1,15 @@
 {
-  "name": "mr-worldwide",
-  "version": "1.0.0",
+  "name": "jiang-hu",
+  "version": "0.1.1",
   "description": "The internet's most beautiful npm package for comprehensive country data including ISO codes, names, continents, and mercator coordinates",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "npm run build ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access=public"
   },
   "keywords": [
     "countries",
@@ -23,12 +24,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikhael28/mr-worldwide.git"
+    "url": "https://github.com/mikhael28/jiang-hu.git"
   },
   "bugs": {
-    "url": "https://github.com/mikhael28/mr-worldwide/issues"
+    "url": "https://github.com/mikhael28/jiang-hu/issues"
   },
-  "homepage": "https://github.com/mikhael28/mr-worldwide#readme",
+  "homepage": "https://github.com/mikhael28/jiang-hu#readme",
   "devDependencies": {
     "typescript": "^5.0.0"
   },
