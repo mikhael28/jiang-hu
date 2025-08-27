@@ -1,0 +1,40 @@
+{
+  "name": "mr-worldwide",
+  "version": "1.0.0",
+  "description": "The internet's most beautiful npm package for comprehensive country data including ISO codes, names, continents, and mercator coordinates",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "countries",
+    "iso-codes",
+    "geography",
+    "world-data",
+    "country-codes",
+    "mercator",
+    "typescript"
+  ],
+  "author": "Michael Nightingale, Expatria, Inc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikhael28/mr-worldwide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikhael28/mr-worldwide/issues"
+  },
+  "homepage": "https://github.com/mikhael28/mr-worldwide#readme",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ]
+}
